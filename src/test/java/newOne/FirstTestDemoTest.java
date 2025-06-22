@@ -31,7 +31,6 @@ public class FirstTestDemoTest {
 		System.out.println("BrowerName   " + browser);
 		System.out.println("URL Name    " + URL);
 		System.out.println("URL Name for FireFox   " + FFURL);
-		//nordVPNConnect connect = new nordVPNConnect();
 		ChromeOptions options = new ChromeOptions();
 		if ("chrome".equalsIgnoreCase(browser)) {
 		    driver = new ChromeDriver(options);
