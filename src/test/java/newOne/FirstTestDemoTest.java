@@ -33,15 +33,7 @@ public class FirstTestDemoTest {
 		System.out.println("URL Name for FireFox   " + FFURL);
 		//nordVPNConnect connect = new nordVPNConnect();
 		ChromeOptions options = new ChromeOptions();
-		//FirefoxOptions FFOptions = new FirefoxOptions();
-		
-		   
-		   //FirefoxProfile profile = new FirefoxProfile();
-		   //profile.setPreference("network.automatic-ntlm-auth.trusted-uris", "shopvolvo.tier3-ps.autosync.cloud");
-		   //profile.setPreference("network.http.phishy-userpass-length", 255);
-		   //FFOptions.setProfile(profile);
-		   //options.addArguments("--incognito");
-		   if ("chrome".equalsIgnoreCase(browser)) {
+		if ("chrome".equalsIgnoreCase(browser)) {
 		    driver = new ChromeDriver(options);
 		    HasAuthentication authentication = (HasAuthentication) driver; 
 			authentication.register(()-> new UsernameAndPassword("gr33n", "y3ll0w"));
