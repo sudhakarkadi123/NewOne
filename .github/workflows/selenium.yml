@@ -21,4 +21,4 @@ jobs:
           java-version: '17'
 
       - name: Run Selenium tests via batch
-        run: TestRunner.bat
+        run: ./TestRunner.bat
