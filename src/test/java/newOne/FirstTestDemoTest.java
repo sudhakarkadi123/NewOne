@@ -38,12 +38,7 @@ public class FirstTestDemoTest {
 			authentication.register(()-> new UsernameAndPassword("gr33n", "y3ll0w"));
 		} else {
 			 
-		    // Handle other browsers
-				//FFOptions.setProfile(profile);
-				//profile.addExtension(new File("C:\\Users\\Sudhakar\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\xzxcjvsz.selenium_profile\\extensions\\autoauth@efinke.com.xpi"));
-				//FFOptions.setProfile(profile);
-				//FFOptions.setProfile(profile);
-				driver = new FirefoxDriver();
+		    driver = new FirefoxDriver();
 
 		    }
 		   
