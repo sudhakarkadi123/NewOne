@@ -69,7 +69,6 @@ public class FirstTestDemoTest {
 			driver.findElement(By.cssSelector("ul.NPagination-items >li:nth-child("+p+")")).click();
 		}
 		    
-		//driver.close();
 		tdriver.get().quit();
 		tdriver.remove(); // Important to remove the driver from ThreadLocal
 	}
