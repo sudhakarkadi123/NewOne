@@ -41,6 +41,20 @@
             <browser>firefox</browser>
         </properties>
     </profile>
+    
+    <profile>
+    <id>headed</id>
+    <properties>
+      <headless>false</headless>
+    </properties>
+  </profile>
+  <profile>
+    <id>headless</id>
+    <properties>
+      <headless>true</headless>
+    </properties>
+  </profile>
+  
 </profiles>
 
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
