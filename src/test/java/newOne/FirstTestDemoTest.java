@@ -31,14 +31,19 @@ public class FirstTestDemoTest {
 		System.out.println("BrowerName   " + browser);
 		System.out.println("URL Name    " + URL);
 		System.out.println("URL Name for FireFox   " + FFURL);
+		boolean isHeadless = Boolean.parseBoolean(System.getProperty("headless", "true"));
 		ChromeOptions options = new ChromeOptions();
+		FirefoxOptions FFoptions = new FirefoxOptions();
+		 if (isHeadless) {
+	            options.addArguments("--headless");
+	        }
 		if ("chrome".equalsIgnoreCase(browser)) {
 		    driver = new ChromeDriver(options);
 		    HasAuthentication authentication = (HasAuthentication) driver; 
 			authentication.register(()-> new UsernameAndPassword("gr33n", "y3ll0w"));
 		} else {
-			 
-		    driver = new FirefoxDriver();
+			FFoptions.addArguments("--headless");
+		    driver = new FirefoxDriver(FFoptions);
 
 		    }
 		   
